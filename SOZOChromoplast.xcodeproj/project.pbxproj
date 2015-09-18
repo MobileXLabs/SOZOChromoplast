@@ -48,7 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0371703038714AA69482AE87 /* Pods-SOZOChromoplastTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOZOChromoplastTests.xcconfig"; path = "Pods/Pods-SOZOChromoplastTests.xcconfig"; sourceTree = "<group>"; };
+		1D50CCD45780A8076F123121 /* Pods-SOZOChromoplastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOZOChromoplastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOZOChromoplastTests/Pods-SOZOChromoplastTests.release.xcconfig"; sourceTree = "<group>"; };
 		226847F1BA6B441E8EDFB8DF /* libPods-SOZOChromoplastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOZOChromoplastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F938219D1C371002AB1D9 /* libSOZOChromoplast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSOZOChromoplast.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F938519D1C371002AB1D9 /* SOZOChromoplast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOZOChromoplast.h; sourceTree = "<group>"; };
@@ -73,6 +73,7 @@
 		314F93B719D1D25C002AB1D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		31B4331A1A6BF646006C7E40 /* UIColor+SOZOCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SOZOCompatibility.h"; sourceTree = "<group>"; };
 		31B4331B1A6BF646006C7E40 /* UIColor+SOZOCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SOZOCompatibility.m"; sourceTree = "<group>"; };
+		FC6E33686731E4B8CFDA8F5A /* Pods-SOZOChromoplastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOZOChromoplastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOZOChromoplastTests/Pods-SOZOChromoplastTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,14 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		103A8B8D9AAB3A8771EF0FF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC6E33686731E4B8CFDA8F5A /* Pods-SOZOChromoplastTests.debug.xcconfig */,
+				1D50CCD45780A8076F123121 /* Pods-SOZOChromoplastTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		314F937919D1C371002AB1D9 = {
 			isa = PBXGroup;
 			children = (
 				314F938419D1C371002AB1D9 /* SOZOChromoplast */,
 				314F938E19D1C371002AB1D9 /* SOZOChromoplastTests */,
 				314F938319D1C371002AB1D9 /* Products */,
-				0371703038714AA69482AE87 /* Pods-SOZOChromoplastTests.xcconfig */,
 				BF4FD46D619B4DB3A42E0EB8 /* Frameworks */,
+				103A8B8D9AAB3A8771EF0FF4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,7 +291,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-SOZOChromoplastTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SOZOChromoplastTests/Pods-SOZOChromoplastTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -420,7 +430,7 @@
 		};
 		314F939719D1C371002AB1D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0371703038714AA69482AE87 /* Pods-SOZOChromoplastTests.xcconfig */;
+			baseConfigurationReference = FC6E33686731E4B8CFDA8F5A /* Pods-SOZOChromoplastTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -440,7 +450,7 @@
 		};
 		314F939819D1C371002AB1D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0371703038714AA69482AE87 /* Pods-SOZOChromoplastTests.xcconfig */;
+			baseConfigurationReference = 1D50CCD45780A8076F123121 /* Pods-SOZOChromoplastTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
